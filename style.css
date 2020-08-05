@@ -1,0 +1,15 @@
+#carta {
+    border-radius: 2rem;    
+}
+
+.signo1, .signo2 {
+    font-size: 7rem;
+}
+
+.numero {
+    font-size: 11rem;
+}
+
+.rojas {
+    color: red;
+}
