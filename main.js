@@ -1,7 +1,7 @@
 let pinta = ["&hearts;", "&spades;" , "&diams;", "&clubs;"];
 
 const generadorNumero = () =>{
-    let numero = Math.floor(Math.random()*10) + 1
+    let numero = Math.floor(Math.random()*13) + 1
     return numero;  
 }
 
@@ -24,4 +24,13 @@ if(t === "&hearts;" || t === "&diams;"){
  }
 
 let n = generadorNumero();
-numeroCarta.innerHTML = n;
+if(n === 11){
+    numeroCarta.innerHTML = "J";
+}else if(n === 12){
+    numeroCarta.innerHTML = "Q";
+}else if(n === 13){
+    numeroCarta.innerHTML = "K";
+}else{
+    numeroCarta.innerHTML = n;
+}
+
